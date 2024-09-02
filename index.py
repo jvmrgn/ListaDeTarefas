@@ -8,9 +8,6 @@ def adicionar_tarefa(tarefas, id_tarefa, descricao, prazo_final, urgencia):
     - descricao (str): Descrição da tarefa.
     - prazo_final (str): Data limite para conclusão da tarefa.
     - urgencia (str): Nível de urgência da tarefa (Baixa, Média, Alta).
-
-    Retorno:
-    - Nenhum
     """
     tarefa = {
         'ID': id_tarefa,
@@ -30,9 +27,6 @@ def listar_tarefas(tarefas):
 
     Parâmetros:
     - tarefas (list): Lista que armazena as tarefas.
-
-    Retorno:
-    - Nenhum
     """
     if not tarefas:
         print("Nenhuma tarefa pendente.")
@@ -69,9 +63,6 @@ def remover_tarefa(tarefas, id_tarefa):
     Parâmetros:
     - tarefas (list): Lista que armazena as tarefas.
     - id_tarefa (int): ID da tarefa a ser removida.
-
-    Retorno:
-    - Nenhum
     """
     for tarefa in tarefas:
         if tarefa['ID'] == id_tarefa:
@@ -86,9 +77,6 @@ def menu():
     Exibe o menu de opções e realiza as operações solicitadas pelo usuário.
 
     Parâmetros:
-    - Nenhum
-
-    Retorno:
     - Nenhum
     """
     tarefas = []
